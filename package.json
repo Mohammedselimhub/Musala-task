@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "cy:chrome": "npx cypress run --browser chrome",
+    "cy:firefox": "npx cypress run --browser firefox",
+    "cy:parallel": "concurrently \"npx cypress run --spec 'tests/careersTest.js'\" \"npx cypress run --spec 'tests/companyTest.js'\" \"npx cypress run --spec 'tests/contactUsTest.js'\"",
+    "merge": "mochawesome-merge cypress/report/*.html > cypress/report/output.html",
+    "generate-mochawesomereport": "merge cypress/report/output.html --reportDir ./ --inline"
+  },
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "cypress-parallel": "^0.6.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "cypress-file-upload": "^5.0.8",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "name": "musala-automation-testing",
+  "description": "This is a QA chalange of Musala which using E2E testing with Cypress.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+
+{
+    "contactUsName"                 : "Mark",
+    "contactUsMobile"               : "01000258741",
+    "invalidContactUsMobile"        : "Add0258741",
+    "contactUsInvalidEmail1"        :"test@test0",
+    "contactUsSubject"              : "Software",
+    "contactUsMassage"              : "Test Message",
+    "contactMailArray":  ["test@test0", "test@test1", "test@test2", "test@test3", "test@test4"]
+  }
+  
